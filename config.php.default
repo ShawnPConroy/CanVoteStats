@@ -1,0 +1,20 @@
+<?php
+namespace CanadianVoteStatisticsApp;
+
+// Set site title, used for <title> elements and homepage.
+$app->setSiteName('Canadian Voting Statistics THE SITE');
+
+// The URI (or URL) of home page and
+// optionally if it's on root (0)
+// or how many folders deep the index.php file is (1, 2, 3...)
+
+// Examples:
+// $app->setUri('http://demo.partialsolution.ca/', 0);
+// $app->setUri('http://demo.partialsolution.ca/canvotestats/', 1);
+$app->setUri('http://domain.com/sub/', 1);
+
+// Database user info (host, username, password, database name, table prefix)
+$app->setDB("localhost", "username", "password", "databasename", "canvotes_");
+
+// Which template to use
+$app->setTemplate('boilerplate');

@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# L - stop checking rules
+# NC - No Case -- case insensitive (not strictly relevate)
+# QSA - Append query to new URI
+RewriteRule !^exclude index.php [L,NC]

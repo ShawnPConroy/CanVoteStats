@@ -1,0 +1,17 @@
+# ignore config
+config.php
+
+# Ignore web server error logs
+error_log
+
+# ignore notes
+notes.md
+
+#ignore PHP fixer
+.php_cs.cache
+
+# Ignore backups
+backup
+backups
+backup/
+backups/
